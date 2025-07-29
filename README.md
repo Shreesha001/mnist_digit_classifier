@@ -5,13 +5,13 @@ A simple and effective handwritten digit classification model trained on the MNI
 
 ---
 
-## 📌 Overview
+## Overview
 
 This notebook trains a neural network to classify grayscale images of handwritten digits (0–9). Each image is 28×28 pixels and belongs to one of 10 classes. The final model achieves high accuracy on unseen data and can be used to predict digits from new inputs.
 
 ---
 
-## 🧠 Model Architecture
+## Model Architecture
 
 - **Input Layer**: Flattened 28×28 image (784 features)
 - **Hidden Layers**:
@@ -22,7 +22,7 @@ This notebook trains a neural network to classify grayscale images of handwritte
 
 ---
 
-## 🔧 Key Components
+## Key Components
 
 - **Loss Function**: `SparseCategoricalCrossentropy`
 - **Optimizer**: `Adam`
@@ -32,7 +32,7 @@ This notebook trains a neural network to classify grayscale images of handwritte
 
 ---
 
-## 📊 Results
+## Results
 
 - **Training Accuracy**: ~97%
 - **Test Accuracy**: ~97%
@@ -40,7 +40,7 @@ This notebook trains a neural network to classify grayscale images of handwritte
 
 ---
 
-## 🧪 Sample Prediction Logic
+## Sample Prediction Logic
 
 ```python
 # Pick one test sample
@@ -59,21 +59,11 @@ predicted_class = np.argmax(probs)
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 - **Source**: [MNIST dataset](http://yann.lecun.com/exdb/mnist/)
 - **Shape**: 60,000 training samples, 10,000 test samples
 - **Preprocessing**: Pixel values normalized to the range [0, 1]
-
----
-
-## 🎯 Purpose
-
-This project is ideal for:
-
-- learning how neural networks work
-- Understanding concepts like logits, softmax, and loss functions
-- A hands-on demonstration of image classification
 
 ---
 
